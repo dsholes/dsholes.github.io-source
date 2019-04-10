@@ -1,9 +1,12 @@
-# Hydrogen
-
-A lightweight, minimalist theme for Pelican. Built from scratch. No bootstrap. No jQuery. Perfect for a personal website or blog.
-
-I am not a web-developer. If you are and you can make this theme better,
-then feel free to fork or contribute!
+Steps for setting up Pelican Blog:
+- Install Python (Anaconda/Miniconda distribution)
+  - https://docs.conda.io/en/latest/miniconda.html
+- Create new conda env (pelican)
+  - `conda create --name pelican python` (creates "empty" conda distribution with just python)
+- Install Git
+  - On Ubuntu as easy as:
+    - `sudo apt-get update`
+    - `sudo apt install git`
 
 To build local site:
 ```
@@ -21,7 +24,3 @@ To build site for Github Pages:
 ```
 pelican -s publishconf.py
 ```
-
-TO DO:
-- Need to create conda env or pip requirements.txt with dependencies.
-- Fix footer URLs. Direct all to github. More permanent?
