@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} | About{% endblock %}
+
+{% block main %}
+    <div class="contentContainer">
+    <img class="imgRounded" src="{{ SITEURL }}/images/hydrogen_logo.png">
+
+    <h1 class="articleTitle" style="text-align:center"> {{page.title}} </h1>
+    {{ page.content }}
+
+    </div>
+
+{% endblock %}

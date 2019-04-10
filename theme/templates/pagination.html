@@ -1,0 +1,29 @@
+{% if DEFAULT_PAGINATION %}
+<div class="pagerContainer">
+	{% if articles_page.has_previous() %}
+		<div class="pagerPrevious">
+			<!-- {% if articles_page.previous_page_number() == 1 %}
+				<a href="{{ SITEURL }}/{{ page_name }}.html">
+			{% else %}
+				<a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
+			{% endif %}
+                &larr; Newer Posts
+                </a> -->
+	        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+				&larr; Newer Posts
+			</a>
+		</div>
+	{% endif %}
+	{% if articles_page.has_next() %}
+		<div class="pagerNext">
+            <!-- <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html" > -->
+			<a href="{{ SITEURL }}/{{ articles_next_page.url }}">
+            Older Posts &rarr;
+            </a>
+        </div>
+	{% endif %}
+</div>
+<div class="pageNumber">
+    Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
+</div>
+{% endif %}

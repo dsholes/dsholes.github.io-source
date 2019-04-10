@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+    <script> hljs.initHighlightingOnLoad(); </script>
+
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body class="site">
+    <header>
+        {% block header %}
+        <div class="navBar" id="mainNavBar">
+          <a class="navTitle" href="{{ SITEURL }}/about">{{ SITENAME }}</a>
+          <a class="navItem" href="{{ SITEURL }}/{{ TAGS_URL }}">Notebook</a>
+          <a class="navItem" target="_blank" rel="noopener noreferrer" href="{{ SITEURL }}/pdfs/GenericCv.pdf">CV</a>
+          <a class="icon" href="javascript:void(0);" onClick="openDrawerMenu()">
+              <svg class="svgMenu" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+              </svg>
+          </a>
+        </div>
+        {% endblock %}
+    </header>
+
+    <main class="siteContent">{% block main %}{% endblock %}</main>
+
+    {% block footer %}
+    <footer>
+        <ul>
+          <!-- <li><a href="{{ SITEURL }}/index.html">Home</a></li> -->
+          <li><a href="{{ SITEURL }}/about">About</a></li>
+          <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+          <li><a href="{{ SITEURL }}/{{ SITEMAP_SAVE_AS }}">Sitemap</a></li>
+        </ul>
+        <div id=pelicanFooter>
+            Themed with
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/dsholes/pelican-hydrogen">
+                Hydrogen
+            </a>
+            by
+            <a target="_blank" rel="noopener noreferrer" href="https://dsholes.github.io/">
+                dsholes
+            </a>
+        </div>
+        <div id=pelicanFooter>
+            Powered by
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/getpelican/pelican">
+                Pelican
+            </a>
+        </div>
+    </footer>
+    {% endblock %}
+
+    <script>
+    function openDrawerMenu(){
+      var x = document.getElementById("mainNavBar");
+      if (x.className === "navBar"){
+        x.className += " responsive";
+      } else {
+        x.className = "navBar";
+      }
+    }
+    </script>
+
+</body>
+</html>

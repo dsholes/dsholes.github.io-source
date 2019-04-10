@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} | Archives{%endblock%}
+{% block main %}
+
+    <div class="contentContainer">
+        <script type="text/javascript">
+            var domainroot="{{ SITEURL }}"
+            function Gsitesearch(curobj){
+                curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+                }
+
+        </script>
+
+        <h1 class="articleTitle">Archives</h1>
+        <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener noreferrer" onSubmit="Gsitesearch(this)">
+            <input name="q" type="hidden" class="texta" />
+            <input name="qfront" type="text" placeholder="Search with Google..." />
+
+        </form>
+
+        <div class="tagListing" style="margin-top:20px;">
+            {% for tag, articles in tags|sort %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}<span class="tagCount">{{ articles|count }}</span></a>
+            {% endfor %}
+        </div>
+
+        {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
+            <h2>{{ year }}</h2>
+            <ul class="archiveList">
+            {% for article in date_year %}
+                <li><a href="{{ SITEURL }}/{{ article.url }}">{{article.title}}</a></li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}

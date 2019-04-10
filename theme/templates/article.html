@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block main %}
+    <div class="bannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                                 url({{ SITEURL }}/{{ article.image_url}});">
+    </div>
+
+    <div class="contentContainer">
+
+    <h1 class='articleTitle'> {{ article.title }} </h1>
+
+    <div class="articleMetaData">
+        Date: {{ article.date.strftime('%B %d, %Y') }}
+        <hr>
+    </div>
+
+    {{ article.content }}
+
+    <div class="tagListing">
+        <span class="articleMetaData">Tags:</span>
+        {% for tag in article.tags|sort %}
+        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+        {% endfor %}
+    </div>
+
+    <hr>
+
+     {% if article.prev_article %}
+         <p>
+             Previous post:
+             <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+                 {{ article.prev_article.title }}
+             </a>
+         </p>
+     {% endif %}
+     {% if article.next_article %}
+         <p>
+             Next post:
+             <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+                 {{ article.next_article.title }}
+             </a>
+         </p>
+     {% endif %}
+
+
+    </div>
+
+{% endblock %}

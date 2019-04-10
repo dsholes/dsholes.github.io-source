@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Tag: {{ tag }} | {{ SITENAME }}{% endblock %}
+
+{% block main %}
+    <div class="contentContainer">
+    <h1 class="articleTitle">Tag: {{ tag }}</h1>
+
+    {% for article in articles %}
+    <div class='articleItemContainer'>
+        <a href="{{ SITEURL }}/{{ article.url }}">
+        <div class="bannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                                     url({{ SITEURL }}/{{ article.image_url}});">
+        </div>
+        </a>
+        <h1 class='articleListTitle'>
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </h1>
+
+        <div class=articleListContent>
+            <p>Date: {{ article.date.strftime('%B %d, %Y') }}</p>
+            {{ article.summary }}
+            <span>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                (Read More)
+                </a>
+            <span>
+
+        </div>
+
+        <div class="tagListing">
+            Tags:
+            {% for tag in article.tags|sort %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% else %}
+     No posts yet!
+    {% endfor %}
+    </div>
+
+{% endblock %}

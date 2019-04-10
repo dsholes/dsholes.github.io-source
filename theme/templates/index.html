@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %} {{ SITENAME }} {% endblock %}
+
+{% block main %}
+    <div class="landingBannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url({{ SITEURL }}/images/hydrogen_banner.jpg);">
+        <div class='bannerText'>
+            Lightweight.
+            <br>
+            <br>
+            Minimalist.
+            <br>
+            <br>
+            Responsive(ish).
+            <br>
+            <br>
+            Pelican Theme
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+<footer class='landingPageFooter'>
+    <ul>
+      <!-- <li><a href="{{ SITEURL }}/index.html">Home</a></li> -->
+      <li><a href="{{ SITEURL }}/about">About</a></li>
+      <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+      <li><a href="{{ SITEURL }}/{{ SITEMAP_SAVE_AS }}">Sitemap</a></li>
+    </ul>
+    <div id=pelicanFooter>
+        Themed with
+        <a target="_blank" rel="noopener noreferrer" href="{{ SITEURL }}">
+            Hydrogen</a>
+         by
+        <a target="_blank" rel="noopener noreferrer" href="https://dsholes.github.io/">
+            dsholes
+        </a>
+    </div>
+    <div id=pelicanFooter>
+        Powered by
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/getpelican/pelican">
+            Pelican
+        </a>
+    </div>
+</footer>
+{% endblock %}
