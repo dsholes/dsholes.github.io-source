@@ -1,3 +1,7 @@
+To Do:
+- Set pelican output path to `~/repos/python/dsholes.github.io`
+- Push `dsholes.github.io-source` to Github
+
 Steps for setting up Pelican Blog:
 - Install Python (Anaconda/Miniconda distribution)
   - https://docs.conda.io/en/latest/miniconda.html
