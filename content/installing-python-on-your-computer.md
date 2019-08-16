@@ -1,7 +1,7 @@
 Title: Installing Python on your computer
 Date: 2019-01-01 02:00
 Tags: python, quick-start, install, miniconda, anaconda, conda
-image_url: /images/generic1.jpg
+image_url: /images/patagonia_2_point.png
 
 Before you can run any Python code, you have to install a Python interpreter on your computer. The interpreter is what reads your Python code, and translates it into "lower level"  machine code that your computer can then understand and execute (**verify this**). At this point that's the most you need to know. Don't get bogged down in the technical jargon for now.
 

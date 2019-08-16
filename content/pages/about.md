@@ -18,6 +18,7 @@ My [Notebook](link) will (hopefully) serve as my external memory, the things I w
 For a quick summary of my professional self, see my [CV](link).
 
 Otherwise feel free to browse my:
+
 - [Linkedin](link)
 - [Github](link)
 - [Google Scholar](link)

@@ -1,7 +1,7 @@
 Title: Python for Everyone: Introduction
 Date: 2019-01-01 01:00
 Tags: python, quick-start, beginner, introduction
-image_url: /images/generic1.jpg
+image_url: /images/patagonia_3_point.png
 
 If you're here, then I probably don't need to convince you to learn Python. It's powerful, it's flexible, it's open source and free (as in $0), and there are thousands of resources available on the interwebs for learning it.
 

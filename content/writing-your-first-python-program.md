@@ -1,7 +1,7 @@
 Title: Writing your first Python program
 Date: 2019-01-01 04:00
 Tags: python, quick-start, beginner, program
-image_url: /images/generic1.jpg
+image_url: /images/tree_point.png
 
 In the last post, we ran some very basic python code directly in a python interactive session. But what would a more realistic example of python code look like? To make our lives easier, the most basic thing we need is a text editor (not a word processor). This will allow us to write and save python code as a file with a `.py` file extension (e.g. `example_script.py`).
 
