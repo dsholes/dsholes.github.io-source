@@ -1,4 +1,4 @@
-Title: How to switch from Python to Matlab
+Title: How to switch from Matlab to Python
 Date: 2019-05-10 10:00
 Tags: python, matlab, tutorial
 image_url: /images/generic1.jpg

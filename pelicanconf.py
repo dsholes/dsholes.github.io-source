@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Darren Sholes'
-SITENAME = 'Hydrogen'
+SITENAME = 'Darren Sholes'
 SITEURL = '.'
 RELATIVE_URLS = True
 
