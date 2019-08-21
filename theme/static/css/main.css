@@ -51,15 +51,15 @@ h1, h2, h3, h4, h5, h6 {
 .articleTitle {
     font-size: 1.8rem;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .articleMetaData {
     font-family: "Raleway";
     font-size: 16px;
     text-align: left;
-    color: #C4C4C4;
-    margin-bottom: 10px;
+    color: #000;
+    margin-bottom: 2em;
 }
 
 h1 {
@@ -526,10 +526,16 @@ footer a:hover{
     font-size: 22px;
     padding-left: 0px;
     margin-left: 0px;
+    margin-bottom: 0.25em;
 }
 
 .articleListTitle > a {
     color: #000;
+}
+
+p.articleListDate {
+    margin-top: 0.5em;
+    font-size: .85em;
 }
 
 .articleListTitle > a:hover{
@@ -541,6 +547,7 @@ footer a:hover{
     text-align: left;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 0.5em;
 }
 
 #articleListTags.tagListing > li{
@@ -555,13 +562,13 @@ footer a:hover{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (min-width: 750px) {
     .articleTitle {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 2.5rem;
+        text-align: left;
     }
 
     .articleMetaData {
-        margin-bottom: 50px;
-        text-align: center;
+        margin-bottom: 3.125em;
+        text-align: left;
     }
 
     /* a.navItem {
@@ -571,11 +578,11 @@ footer a:hover{
     } */
 
     h1 {
-      font-size: 3em;
+      font-size: 2.25em;
     }
 
     h2 {
-      font-size: 2.25em;
+      font-size: 2.0em;
     }
 
     h3 {
@@ -636,9 +643,9 @@ footer a:hover{
         height: 470px;
     }
 
-    .articleListContent > p {
+    /* .articleListContent > p {
         text-align: justify;
-    }
+    } */
 
     .pageNumber {
         text-align: left;

@@ -1,14 +1,18 @@
-Title: Installing Python on your computer
+Title: Install Python on your computer
 Date: 2019-01-01 02:00
 Tags: python, quick-start, install, miniconda, anaconda, conda
 image_url: /images/patagonia_2_point.png
 
+# Background
+<!-- PELICAN_BEGIN_SUMMARY -->
 Before you can run any Python code, you have to install a Python interpreter on your computer. The interpreter is what reads your Python code, and translates it into "lower level"  machine code that your computer can then understand and execute (**verify this**). At this point that's the most you need to know. Don't get bogged down in the technical jargon for now.
+<!-- PELICAN_END_SUMMARY -->
 
 Python, like any software, is constantly evolving, so there are a bunch of versions floating around. There are a few differences between Python 2 and Python 3. I recommend you learn Python 3. The latest version as of **PUT-DATE-HERE** is Python 3.7 (verify this).
 
 Because Python is open source, there are many people/organizations that offer **distributions (link to description of 'distribution')** of it. We'll use the Anaconda distribution. Anaconda is (**insert description here**)... I use the Anaconda distribution (specifically Miniconda) because it uses the package manager `conda`, which allows you to easily install Python packages (**describe what these are**), as well as create and manage Python environments. We'll discuss why that's valuable later. For now, let's just get to the good stuff.
 
+# The Steps:
 1. Download Miniconda
     - Go to [Miniconda webpage](link to Miniconda)
     - Pick the latest version for your operating system (Windows, MacOS or Linux)

@@ -18,7 +18,7 @@
         </h1>
 
         <div class=articleListContent>
-            <p>Date: {{ article.date.strftime('%B %d, %Y') }}</p>
+            <p class=articleListDate>{{ article.date.strftime('%B %d, %Y') }}</p>
             {{ article.summary }}
             <span>
                 <a href="{{ SITEURL }}/{{ article.url }}">

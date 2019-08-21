@@ -11,12 +11,12 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://dsholes.github.io/pelican-hydrogen'
+SITEURL = 'https://dsholes.github.io/'
 RELATIVE_URLS = False
 
 # Just for Hydrogen Github Pages Site
 # Change or delete this for your site
-OUTPUT_PATH = '../docs/'
+OUTPUT_PATH = '../dsholes.github.io/'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 

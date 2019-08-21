@@ -1,4 +1,4 @@
-title: About Me
+title: About
 template: about
 URL: about/
 save_as: about/index.html
@@ -13,14 +13,14 @@ I'm currently living and working in Freiburg, Germany, a beautiful city in the h
 
 When I'm not playing with toys in the lab, you will find me cooking/jamming/laughing with friends, playing basketball, walking around in a forest, or sleeping.
 
-My [Notebook](link) will (hopefully) serve as my external memory, the things I want to keep organized for the future: my recipes, my projects, things I've learned, and things I'm likely to forget. Maybe you'll find some of those things useful.
+My [Notebook](./notebook) will (hopefully) serve as my external memory, the things I want to keep organized for the future: my recipes, my projects, things I've learned, and things I'm likely to forget. Maybe you'll find some of those things useful.
 
-For a quick summary of my professional self, see my [CV](link).
+For a quick summary of my professional self, see my [CV](./pdfs/DarrenSholesCV).
 
 Otherwise feel free to browse my:
 
 - [Linkedin](link)
-- [Github](link)
+- [Github](https://github.com/dsholes)
 - [Google Scholar](link)
 - [Research Gate](link)
 - [Bandcamp](link)

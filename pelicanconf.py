@@ -50,6 +50,13 @@ MARKDOWN = {
         },
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {
+            'marker': '[TableOfContents]',
+            'title': 'Table of Contents',
+            'anchorlink': False,
+            'permalink': False,
+            'baselevel': 1,
+        },
     },
     'output_format': 'html5',
 }
