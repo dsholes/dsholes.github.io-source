@@ -1,3 +1,12 @@
+TO DO:
+1. Change circle headshot on `About` page to be different from splash.
+2. Make one `My Python Setup` article to make it easy to set up python on new machines with same conda/jupyterlab/vscode/git settings.
+    1. Miniconda
+    2. VSCode
+    3. Jupyterlab and nb_conda_kernels
+    4. Git
+3. Publish website
+4. Finish all articles in `content`. Right now some are saved as `status=draft`.
 
 Python:
 1. Installing Python on Your Computer
@@ -5,7 +14,8 @@ Python:
 2. Writing your first Python code
     1. Getting comfortable with Terminal/Command Prompt
 3. Writing your first Python program
-    1. Installing a Text Editor - Atom
+    1. Installing a Text Editor - VSCode or Atom
+        1. Copy the following settings on every computer/platform that you use: `C:\Users\Sholes\AppData\Roaming\VSCodium\User\settings.json`
     2. What does a Python program look like (and what makes programming so useful)?
         1. Syntax - why is it important?
         2. Idea of data types (e.g. str, float, int, list, dict)
@@ -13,6 +23,16 @@ Python:
         4. `if` statements and True/False booleans
     3. Using `conda` to install packages
     4. Version control with Git
+        1. Change `.gitconfig` to use `vscodium` as editor:
+            `git config --global -e`
+        2. Add this to `.gitconfig`:
+            ```
+            [core]
+                editor = codium --wait
+            [user]
+                name = Darren Sholes
+                email = sholesdarren@gmail.com
+           ```
 4. Interacting with Excel or CSV data in Python with Pandas
     1. Interactive Python - Jupyterlab
     2. Reading table data with `pandas`

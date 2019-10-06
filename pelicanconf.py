@@ -23,12 +23,12 @@ EXTRA_PATH_METADATA = {
 }
 
 # For "Notebook" page, Use the tags.html as the template
-TAGS_URL = 'notebook/'
-TAGS_SAVE_AS = 'notebook/index.html'
+# TAGS_URL = 'notebook/'
+# TAGS_SAVE_AS = 'notebook/index.html'
 ARTICLE_URL = 'notebook/{slug}'
 ARTICLE_SAVE_AS = 'notebook/{slug}/index.html'
-ARCHIVES_URL = 'archives/'
-ARCHIVES_SAVE_AS = 'archives/index.html'
+ARCHIVES_URL = 'notebook/'
+ARCHIVES_SAVE_AS = 'notebook/index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 SITEMAP_SAVE_AS = 'sitemap.xml'

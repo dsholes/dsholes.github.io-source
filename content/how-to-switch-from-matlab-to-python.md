@@ -1,7 +1,8 @@
 Title: How to switch from Matlab to Python
 Date: 2019-05-10 10:00
-Tags: python, matlab, tutorial
-image_url: /images/patagonia_1_point.png
+Tags: python, matlab
+status: draft
+image_url: /images/patagonia_1_orig.jpg
 
 Look, I get it. You already know Matlab. All your s@#%'s already written in Matlab. Your company, your lab, or your school is already paying for Matlab. It feels comfortable. It feels easy.
 
