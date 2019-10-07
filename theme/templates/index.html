@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 
 {% block title %} {{ SITENAME }} {% endblock %}
+{% block header %}{% endblock %}
 
 {% block main %}
-    <div class="landingBannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    <div class="landingBannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url({{ SITEURL }}/images/patagonia_1_orig.jpg);">
         <div class='bannerText'>
+                <a href="{{ SITEURL }}/about" style="color:#fff;"> DARREN SHOLES </a>
+        <br>
+        <a href="{{ SITEURL }}/about" style="font-size:.6em; color:#fff;border:solid 2px #fff;padding:.01em 12px;">explore</a>
         </div>
     </div>
 
@@ -16,7 +20,7 @@
     <ul>
       <!-- <li><a href="{{ SITEURL }}/index.html">Home</a></li> -->
       <li><a href="{{ SITEURL }}/about">About</a></li>
-      <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+      <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Notebook</a></li>
       <li><a href="{{ SITEURL }}/{{ SITEMAP_SAVE_AS }}">Sitemap</a></li>
     </ul>
     <div id=pelicanFooter>
