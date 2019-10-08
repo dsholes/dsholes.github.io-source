@@ -7,6 +7,8 @@ TO DO:
     4. Git
 3. Publish website
 4. Finish all articles in `content`. Right now some are saved as `status=draft`.
+5. Useful for turning jupyter notebooks into markdown/html without input: https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330
+    1. Use newest version of jupyterlab and nbconvert
 
 Python:
 1. Installing Python on Your Computer
