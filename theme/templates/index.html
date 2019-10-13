@@ -5,11 +5,13 @@
 
 {% block main %}
     <div class="landingBannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url({{ SITEURL }}/images/patagonia_1_orig.jpg);">
+        url({{ SITEURL }}/images/patagonia_1_orig.JPG);">
         <div class='bannerText'>
                 <a href="{{ SITEURL }}/about" style="color:#fff;"> DARREN SHOLES </a>
         <br>
-        <a href="{{ SITEURL }}/about" style="font-size:.6em; color:#fff;border:solid 2px #fff;padding:.01em 12px;">explore</a>
+            <div class='landingButton'>
+            <a href="{{ SITEURL }}/about">explore</a>
+            </div>
         </div>
     </div>
 
@@ -25,7 +27,7 @@
     </ul>
     <div id=pelicanFooter>
         Themed with
-        <a target="_blank" rel="noopener noreferrer" href="{{ SITEURL }}">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dsholes/pelican-hydrogen">
             Hydrogen</a>
          by
         <a target="_blank" rel="noopener noreferrer" href="https://dsholes.github.io/">
