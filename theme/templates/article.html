@@ -1,5 +1,15 @@
 {% extends "base.html" %}
-
+{% block style %}
+    .navBar {
+        background-color: #FFF;
+    }
+    .navBar a {
+        color: #000;
+    }
+    .navBar a path{
+        fill:  #000;
+    }
+{% endblock %}
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block main %}

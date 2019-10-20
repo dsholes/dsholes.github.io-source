@@ -222,13 +222,12 @@ input[type=text], select {
 /* Responsive Navigation Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .navBar {
-    background-color: #FFF;
+    background-color: #061C30;
     overflow: hidden;
-    margin: 0 5%;
 }
 
 .navBar a {
-    color: #000;
+    color: #d3d3d3;
     padding: 14px 25px;
     text-decoration: none;
     font-family: "Montserrat";
@@ -249,6 +248,10 @@ input[type=text], select {
 /*SVG color change during hover state*/
 .navBar a:hover path{
     fill:  #6699CC;
+}
+
+.navBar a path{
+    fill:  #d3d3d3;
 }
 
 .svgMenu {
@@ -294,6 +297,7 @@ responsive*/
         position: absolute;
         right: 0;
         top: 0;
+        padding-right: 5%;
     }
 
 /*Removes the originally set float and brings them to view*/
@@ -631,6 +635,7 @@ p.articleListDate {
         /* max-width: 720px; */
         font-size: 20px;
         margin:0 auto;
+        padding: 0 0;
     }
 
     .navBar a.navTitle{
