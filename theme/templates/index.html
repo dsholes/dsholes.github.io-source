@@ -1,42 +1,130 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
 
-{% block title %} {{ SITENAME }} {% endblock %}
-{% block header %}{% endblock %}
+<html lang="en-US">
+    <head>
+        {% block head %}
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-{% block main %}
-    <div class="landingBannerImage" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url({{ SITEURL }}/images/patagonia_1_orig.jpg);">
-        <div class='bannerText'>
-                <a href="{{ SITEURL }}/about" style="color:#fff;"> DARREN SHOLES </a>
-        <br>
-        <a href="{{ SITEURL }}/about" style="font-size:.6em; color:#fff;border:solid 2px #fff;padding:.01em 12px;">explore</a>
-        </div>
-    </div>
+
+<title>{{ SITENAME }}</title>
+<meta name="author" content="{{ SITENAME }}">
+<meta name="description" content="Personal website">
+<meta name="robots" content="index, follow">
+<meta name="referrer" content="always">
+
+
+<meta property="og:title" content="{{ SITENAME }}">
+<meta property="og:description" content="Personal website">
+
+
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/landing.css" type="text/css" media="screen">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+  <style>
+  
+    .fs-split .split-image { background-image: url("{{ SITEURL }}/images/headshot.JPG"); background-position: center left; }
+  
+  </style>
+
 
 {% endblock %}
 
-{% block footer %}
-<footer class='landingPageFooter'>
-    <ul>
-      <!-- <li><a href="{{ SITEURL }}/index.html">Home</a></li> -->
-      <li><a href="{{ SITEURL }}/about">About</a></li>
-      <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Notebook</a></li>
-      <li><a href="{{ SITEURL }}/{{ SITEMAP_SAVE_AS }}">Sitemap</a></li>
-    </ul>
-    <div id=pelicanFooter>
-        Themed with
-        <a target="_blank" rel="noopener noreferrer" href="{{ SITEURL }}">
-            Hydrogen</a>
-         by
-        <a target="_blank" rel="noopener noreferrer" href="https://dsholes.github.io/">
-            dsholes
-        </a>
+
+</head>
+
+<body id="fullsingle" class="page-template-page-fullsingle-split">
+  {% block main %}
+
+  <div class="fs-split">
+
+    
+    
+
+      <div class="split-image">
+
+      </div>
+
+    
+    
+
+    
+    <div class="split-content">
+      <div class="split-content-vertically-center">
+        
+        <div class="split-intro">
+          {{ SITENAME }}
+  
+</div>
+
+
+        
+        
+  
+  <div class="split-bio">
+    <p> Hi there. My name's Darren. I'm a technologist.</p>
+    <p> When I'm not <s>making a mess</s> in the lab, you will find me making music / brewing beer / cooking with friends, playing basketball, walking around in a forest, or sleeping.</p>
+
+</div>
+
+
+  
+  <div class="split-lists">
+
+  
+    
+
+    
+      <div class="split-list">
+        <h3>Content</h3>
+        <ul>
+          
+            <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Notebook</a></li>
+          
+            <li><a target="_blank" rel="noopener noreferrer" href="{{ SITEURL }}/pdfs/DarrenSholesCv.pdf">CV</a></li>
+          
+        </ul>
+      </div>  
+
+    
+      <div class="split-list">
+        <h3>Network</h3>
+        <ul>
+          
+            <li><a target="_blank" rel="noopener noreferrer" href={{ LINKEDIN_URL }}>Linkedin</a></li>
+          
+            <li><a target="_blank" rel="noopener noreferrer" href={{ GITHUB_URL }}>Github</a></li>
+          
+        </ul>
+      </div>
+    
+
+    
+  
+
+</div>
+
+
+
+        
+        <div class="split-credit">
+  <p><a href="https://onepagelove.com/split">Split Template (with changes)</a> by <a href="https://onepagelove.com/">One Page Love</a></p>
+
+  <!--
+  To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split
+  this really helps contribute towards us developing more templates and means the world to me!
+  Cheers, Rob (@robhope)
+  -->
+</div>
+
+      </div>
     </div>
-    <div id=pelicanFooter>
-        Powered by
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/getpelican/pelican">
-            Pelican
-        </a>
-    </div>
-</footer>
-{% endblock %}
+
+  </div>
+
+  {% endblock %}
+
+</body></html>
