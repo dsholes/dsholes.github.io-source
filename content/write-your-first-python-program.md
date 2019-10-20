@@ -1,7 +1,7 @@
 Title: Write your first Python program
 Date: 2019-01-01 04:00
 Tags: python-for-everyone, vs-code, atom
-image_url: /images/patagonia_5_orig.jpg
+image_url: /images/patagonia_5_orig.JPG
 
 # Background
 <!-- PELICAN_BEGIN_SUMMARY -->

@@ -1,7 +1,7 @@
 Title: Install Python on your computer
 Date: 2019-01-01 02:00
 Tags: python-for-everyone, install, miniconda, anaconda, conda
-image_url: /images/patagonia_2_orig.jpg
+image_url: /images/patagonia_2_orig.JPG
 
 # Background
 <!-- PELICAN_BEGIN_SUMMARY -->
@@ -22,10 +22,14 @@ Because Python is open source, there are many people/organizations that offer **
 # Test that it worked
 Open the command line. On Windows open the `Command Prompt`, and on macOS open `Terminal`.
 
-- Type `conda info`. 
+- Type `conda info`.
+
     ![conda-test-install]({static}images/conda_test_install.PNG)
+    
 - Type `python`.
+
     ![python-test-install]({static}images/python_test_install.png)
+
 # Issues?
 Hopefully, the two commands above didn't produce any error messages. If they did, copy-paste the message into Google. You will find the answer ;).
 
