@@ -25,6 +25,7 @@ Open the command line. On Windows open the `Command Prompt`, and on macOS open `
 - Type `conda info`.
 
     ![conda-test-install]({static}images/conda_test_install.PNG)
+    
 - Type `python`.
 
     ![python-test-install]({static}images/python_test_install.png)

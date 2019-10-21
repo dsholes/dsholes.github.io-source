@@ -2,12 +2,22 @@ TO DO:
 1. Change circle headshot on `About` page to be different from splash.
 2. Make one `My Python Setup` article to make it easy to set up python on new machines with same conda/jupyterlab/vscode/git settings.
     1. Miniconda
+        1. Path variables:
+            1. `C:\Users\Sholes\AppData\Local\Continuum\miniconda3\Scripts`
+            2. `C:\Users\Sholes\AppData\Local\Continuum\miniconda3`
+            3. Might have to add to both user and system
     2. VSCode
+        1. Disable telemetry
+        2. Install python extension and 
+        3. Change settings.json 
     3. Jupyterlab and nb_conda_kernels
+        1. `conda install -c conda-forge jupyterlab`
+        2. `conda install nb_conda_kernels`
+        3. Add jupyter_notebook_config.py with correct terminal
+    4. Add conda env (e.g. pydata) with pandas, numpy, plotly, seaborn and matplotlib
     4. Git
-3. Publish website
-4. Finish all articles in `content`. Right now some are saved as `status=draft`.
-5. Useful for turning jupyter notebooks into markdown/html without input: https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330
+3. Finish all articles in `content`. Right now some are saved as `status=draft`.
+4. Useful for turning jupyter notebooks into markdown/html without input: https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330
     1. Use newest version of jupyterlab and nbconvert
 
 Python:

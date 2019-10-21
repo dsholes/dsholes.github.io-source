@@ -6,6 +6,8 @@ AUTHOR = 'Darren Sholes'
 SITENAME = 'Darren Sholes'
 SITEURL = '.'
 RELATIVE_URLS = True
+LINKEDIN_URL = "https://de.linkedin.com/in/darren-sholes-5b08672a"
+GITHUB_URL = "https://github.com/dsholes"
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'

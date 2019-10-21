@@ -1,6 +1,7 @@
 To Do:
-- Set pelican output path to `~/repos/python/dsholes.github.io`
-- Push `dsholes.github.io-source` to Github
+- Decide on navbar background color
+    - Notebook page looks jarring with white background
+    - Individual articles look better with white background
 
 Steps for setting up Pelican Blog:
 - Install Python (Anaconda/Miniconda distribution)

@@ -1,5 +1,15 @@
 {% extends "base.html" %}
-
+{% block style %}
+    .navBar {
+        background-color: #FFF;
+    }
+    .navBar a {
+        color: #000;
+    }
+    .navBar a path{
+        fill:  #000;
+    }
+{% endblock %}
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block main %}
@@ -12,7 +22,7 @@
     <h1 class='articleTitle'> {{ article.title }} </h1>
 
     <div class="articleMetaData">
-        {{ article.date.strftime('%B %d, %Y') }}
+        <!-- {{ article.date.strftime('%B %d, %Y') }} -->
         <hr>
     </div>
 

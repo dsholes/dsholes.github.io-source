@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
     <script> hljs.initHighlightingOnLoad(); </script>
+    <style>{% block style %}{% endblock %}</style>
 
     <title>{% block title %}{% endblock %}</title>
     {% endblock %}
@@ -20,7 +21,7 @@
     <header>
         {% block header %}
         <div class="navBar" id="mainNavBar">
-          <a class="navTitle" href="{{ SITEURL }}/about">{{ SITENAME }}</a>
+          <a class="navTitle" href="{{ SITEURL }}">{{ SITENAME }}</a>
           <a class="navItem" href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Notebook</a>
           <a class="navItem" target="_blank" rel="noopener noreferrer" href="{{ SITEURL }}/pdfs/DarrenSholesCV.pdf">CV</a>
           <a class="icon" href="javascript:void(0);" onClick="openDrawerMenu()">
@@ -40,24 +41,11 @@
           <!-- <li><a href="{{ SITEURL }}/index.html">Home</a></li> -->
           <li><a href="{{ SITEURL }}">About</a></li>
           <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Notebook</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/dsholes/dsholes.github.io-source">
+            Theme
+          </a></li>
           <li><a href="{{ SITEURL }}/{{ SITEMAP_SAVE_AS }}">Sitemap</a></li>
         </ul>
-        <div id=pelicanFooter>
-            Themed with
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/dsholes/pelican-hydrogen">
-                Hydrogen
-            </a>
-            by
-            <a target="_blank" rel="noopener noreferrer" href="https://dsholes.github.io/">
-                dsholes
-            </a>
-        </div>
-        <div id=pelicanFooter>
-            Powered by
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/getpelican/pelican">
-                Pelican
-            </a>
-        </div>
     </footer>
     {% endblock %}
 
