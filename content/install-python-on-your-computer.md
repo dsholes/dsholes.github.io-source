@@ -1,5 +1,5 @@
 Title: Install Python on your computer
-Date: 2019-01-01 02:00
+Date: 2019-11-30 02:00
 Tags: python-for-everyone, install, miniconda, anaconda, conda
 image_url: /images/patagonia_2_orig.JPG
 
