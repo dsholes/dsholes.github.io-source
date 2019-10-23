@@ -515,6 +515,19 @@ footer a:hover{
     color:#FFF;
 }
 
+.landingButton > a {
+    font-size:.6em; 
+    color:#fff;
+    border:solid 2px #fff;
+    padding:.01em 12px;   
+}
+
+.landingButton > a:hover {
+    background:#FFF;
+    color:#000;
+}
+
+
 .tagListing .tagCount {
     font-size:14px;
     color:#000;
