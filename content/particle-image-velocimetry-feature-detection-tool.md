@@ -1,6 +1,6 @@
-Title: Warpdrive Python audio sync tool for low cost recording
+Title: Particle Image Velocimetry Flame Brush Detection Tool
 Date: 2019-12-30 04:00
-Tags: portfolio, python, signal-processing, music
+Tags: portfolio, python, image-processing, combustion, piv, open-cv
 status: draft
 image_url: /images/patagonia_5_orig.JPG
 
