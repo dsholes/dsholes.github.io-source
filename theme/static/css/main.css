@@ -238,7 +238,7 @@ input[type=text], select {
 
 .navBar a.navTitle {
     margin-right: 50px;
-    padding-left: 0px;
+    padding-left: 5%;
 }
 
 .navBar a:hover {
@@ -282,7 +282,7 @@ responsive*/
     .navBar a.icon {
         display: block;
         float: right;
-        padding-right: 0px;
+        padding-right: 5%;
     }
 
     /*The navBar class will be changed to 'navBar responsive' using JS.

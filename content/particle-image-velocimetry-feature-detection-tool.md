@@ -1,10 +1,9 @@
 Title: Particle Image Velocimetry Flame Brush Detection Tool
-Date: 2019-12-30 04:00
+Date: 2019-12-31 22:00
 Tags: portfolio, python, image-processing, combustion, piv, open-cv
-status: draft
-image_url: /images/patagonia_5_orig.JPG
+image_url: /images/piv_example_output.png
 
-# Background
 <!-- PELICAN_BEGIN_SUMMARY -->
-Designed a deployable dragsail to de-orbit a nanosatellite at the end of mission to mitigate space debris. A prototype (NABEO) was launched on RocketLab's It's Business Time first commercial rocket.
+I developed a feature detection tool with Python OpenCV to analyze Particle Image Velocimetry (PIV) data of a low-emission, fuel flexible gas burner. The tool was used to detect different features of the flame brush in order to characterize a scaled version of the Low-Swirl Burner, developed at Lawrence Berkeley National Laboratory. See the source code [here](https://github.com/dsholes/python-piv).
 <!-- PELICAN_END_SUMMARY -->
+

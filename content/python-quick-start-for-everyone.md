@@ -1,5 +1,5 @@
 Title: Python for Everyone: Introduction
-Date: 2019-11-31 00:00
+Date: 2019-11-30 23:59
 Tags: python-for-everyone, python-introduction, python
 image_url: /images/patagonia_3_orig.JPG
 
