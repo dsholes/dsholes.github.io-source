@@ -37,23 +37,23 @@
 
     <hr>
 
-     {% if article.next_article %}
-        <p>
-            Next post:
-            <a href="{{ SITEURL }}/{{ article.next_article.url}}">
-                {{ article.next_article.title }}
-            </a>
-        </p>
-     {% endif %}
      {% if article.prev_article %}
          <p>
-             Previous post:
+             Next post:
              <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
                  {{ article.prev_article.title }}
              </a>
          </p>
      {% endif %}
-
+     
+     {% if article.next_article %}
+        <p>
+            Previous post:
+            <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+                {{ article.next_article.title }}
+            </a>
+        </p>
+     {% endif %}
 
     </div>
 
